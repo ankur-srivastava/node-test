@@ -24,6 +24,20 @@ it('should test for object equality', ()=>{
     age:25
   });
 });
+//For async test we need to specify done parameter
+it('should async add two nos', (done)=>{
+    utils.asyncAdd(4,5,(sum)=>{
+    expect(sum).toBe(9).toBeA('number');
+    done();
+  });
+});
+
+it('should test async square',(done)=>{
+  utils.asyncSquare(4, (res)=>{
+    expect(res).toBe(16);
+  });
+  done();
+});
 
 it('should test full name', ()=>{
   expect(utils.setName({}, 'Ankur Srivastava')).toInclude({

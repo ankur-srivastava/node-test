@@ -7,8 +7,23 @@ var setName = (user, fullName)=>{
   return user;
 };
 
+/*An async function*/
+var asyncAdd = (a,b, callback)=>{
+  setTimeout(()=>{
+    callback(a+b);
+  }, 1000);
+};
+
+var asyncSquare = (a, callback)=>{
+  setTimeout(()=>{
+    callback(a*a);
+  }, 1000);
+};
+
 module.exports = {
   add,
   square,
-  setName
+  setName,
+  asyncAdd,
+  asyncSquare
 };
