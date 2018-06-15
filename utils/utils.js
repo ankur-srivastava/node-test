@@ -20,10 +20,22 @@ var asyncSquare = (a, callback)=>{
   }, 1000);
 };
 
+var asyncMul = (a,b,callback)=>{
+  setTimeout(()=>{
+    callback(a*b);
+  }, 1000);
+};
+
+var message = (name)=>{
+  return ('Hello '+name);
+};
+
 module.exports = {
   add,
   square,
   setName,
   asyncAdd,
-  asyncSquare
+  asyncSquare,
+  asyncMul,
+  message
 };

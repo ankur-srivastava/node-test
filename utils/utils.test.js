@@ -45,3 +45,15 @@ it('should test full name', ()=>{
     lastName: 'Srivastava'
   });
 });
+
+it('should multiply two nos async', (done)=>{
+  utils.asyncMul(3,4,(res)=>{
+      expect(res).toBe(12);
+  });
+  done();
+});
+
+it('should print Hello Ankur', ()=>{
+  var message = utils.message('Ankur');
+  expect(message).toEqual('Hello Ankur');
+});
