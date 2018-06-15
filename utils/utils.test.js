@@ -35,8 +35,8 @@ it('should async add two nos', (done)=>{
 it('should test async square',(done)=>{
   utils.asyncSquare(4, (res)=>{
     expect(res).toBe(16);
+    done();
   });
-  done();
 });
 
 it('should test full name', ()=>{
@@ -49,8 +49,8 @@ it('should test full name', ()=>{
 it('should multiply two nos async', (done)=>{
   utils.asyncMul(3,4,(res)=>{
       expect(res).toBe(12);
+      done();
   });
-  done();
 });
 
 it('should print Hello Ankur', ()=>{
