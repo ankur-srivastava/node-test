@@ -5,4 +5,4 @@ Steps
 
 1. Clone this Project
 2. Run "npm install"
-3. The tests are available in util folder. You can run the test using "npm test"
+3. The tests are available in util folder. You can run the test using "npm test" or "npm run test"

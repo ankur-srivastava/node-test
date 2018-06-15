@@ -11,5 +11,9 @@
   "devDependencies": {
     "expect": "^1.20.2",
     "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "supertest": "^3.1.0"
   }
 }
