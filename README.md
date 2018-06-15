@@ -1,5 +1,5 @@
 # node-test
-An application to perform unit testing using Node, Mocha, Expect and Supertest.
+An application to perform unit testing using Node, Mocha, Expect, Supertest and Spy-to mock functions.
 
 You can start by exploring utils.js and utils.test.js and then move on to server.js and server.test,js
 
